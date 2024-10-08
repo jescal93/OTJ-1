@@ -15,6 +15,18 @@
     <header>
         <h1 id="header">Pit Rescue – Rescue, Rehabilitate, Rehome.</h1>
     </header>
+    <div>
+        <img src="./aisd-wde-on-the-job-1/images/image1.webp" 
+        alt="Beautiful Brown Pitbull" width="200px" height="200px">
+        <img src="./aisd-wde-on-the-job-1/images/image2.jpeg"
+        alt="Playful Pitbull playing with ball" width="200px" height="200px">
+        <img src="./aisd-wde-on-the-job-1/images/image3.jpg"
+        alt="Very Happy Pittie" width="200px" height="200px">
+        <img src="./aisd-wde-on-the-job-1/images/image4.jpeg"
+        alt="Happy Pitbull just Adopted" width="200px" height="200px">
+        <img src="./aisd-wde-on-the-job-1/images/image6.webp"
+        alt="Happy Cozy Pittie" width="200px" height="200px">
+    </div>
     <section>
         <h2>ABout Us</h2>
         <p>
@@ -31,7 +43,7 @@
         <h2>
             Contact Us
         </h2>
-        <form>
+        <form action="/submit" method="post">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your Name">
             <br><br>
@@ -42,8 +54,8 @@
             <input type="tel" id="phone" name="phone" 
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
             <br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required rows="4" 
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" required rows="4" 
             maxlength="200" placeholder="Tell us about yourself..."></textarea>
             <br><br>
             <button type="submit">Submit</button>
