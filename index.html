@@ -8,15 +8,22 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="#Rescue">Rescue A Pup</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#location">Location</a>
+        <div class="nav">
+            <div class="title">
+                <a href="#">Pit Rescue</a>
+            </div>
+                <ul>
+                    <li class="navList"><a href="#Rescue">Rescue A Pup</a></li>
+                    <li class="navList"><a href="#About">About Us</a></li>
+                    <li class="navList"><a href="#Contact">Contact Us</a></li>
+                    <li class="navList"><a href="#Location">Location</a></li>
+                </ul>
+        </div>
     </nav>
     <header>
         <h1 id="header">Pit Rescue – Rescue, Rehabilitate, Rehome.</h1>
     </header>
-    <section>
+    <section id="Rescue">
         <div class="images">
             <h2 class="h2">
                 Rescue A Pup
@@ -42,44 +49,84 @@
                     alt="Happy Cozy Pittie">
                 </div>
         </div>
-    </section>
+    </section id="About">
     <section class="aboutUS">
         <h2>About Us</h2>
-        <p>
+        <p class="text">
             Welcome to Pit Rescue, where our passion is giving second chances to one of the most misunderstood and loving breeds—Pitbulls. Founded with a mission to rescue, rehabilitate, and rehome Pitbulls in need, we are dedicated to breaking the stigma surrounding these amazing dogs. At Pit Rescue, we believe every Pitbull deserves a life filled with love, care, and respect.
         </p>
-        <p>
+        <p class="text">
             Our team of passionate animal advocates works tirelessly to ensure each dog that comes through our doors receives the attention they deserve. From medical care to behavioral training, we prepare our pups for their forever homes while educating the community about responsible ownership and breed awareness.
         </p>
-        <p>
+        <p class="text">
             Whether you are looking to adopt, foster, or support in other ways, we welcome you to join us in giving these loyal companions the lives they deserve. Together, we can make a difference—one Pitbull at a time.
         </p>
     </section>
-    <div>
-        <h2>
-            Contact Us
-        </h2>
-        <br>
-        <div class="contact">
-            <form action="/submit" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name">
-                <br><br>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required placeholder="example@mail.com">
-                <br><br>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" 
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-                <br><br>
-                <label for="bio">Bio:</label>
-                <textarea id="bio" name="bio" required rows="4" 
-                maxlength="200" placeholder="Tell us about yourself..."></textarea>
-                <br><br>
-                <button type="submit">Submit</button>
-            </form>
+    <section id="Contact" id="Location">
+        <div class="infoContainer">
+            <div class="contact">
+                <h2>
+                    Contact Us
+                </h2>
+                <br>
+                    <form action="/submit" method="post">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <br><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        <br><br>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" 
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        <br><br>
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="bio" required rows="4" 
+                        maxlength="200" placeholder="Tell us about yourself..."></textarea>
+                        <br><br>
+                        <button type="submit">Submit</button>
+                    </form>
+            </div>
+            <div class="location">
+                <h2>
+                    Location & Hours
+                </h2>
+                    <p>
+                        511 Tristin Isle Park Hudsonton, Michigan
+                    </p>
+                        <ul class="hours">
+                            <li class="hours">
+                                <span>Monday:</span>
+                                <span>10am-7pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Tuesday:</span>
+                                <span>10am-7pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Wednesday:</span>
+                                <span>10am-7pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Thursday:</span>
+                                <span>10am-10pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Friday:</span>
+                                <span>10am-9pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Saturday:</span>
+                                <span>12am-11pm</span>
+                            </li>
+                            <li class="hours">
+                                <span>Sunday:</span>
+                                <span>12am-11pm</span>
+                            </li>
+                        </ul>
+            </div>
         </div>
-    </div>
+    </section>
     <br>
     <footer>
         <div class="footer">
