@@ -131,6 +131,10 @@ h2 {
     padding-top: 50px;
 }
 
+.contact {
+    background-color: beige;
+}
+
 .infoContainer .location {
     max-width: 455px;
     width: 100%;
