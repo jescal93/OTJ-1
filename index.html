@@ -174,28 +174,33 @@
                     Contact Us
                 </h2>
                 <br>
-                    <form action="/submit" method="post">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                        <br><br>
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required placeholder="example@mail.com">
-                        <br><br>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" 
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-                        <br><br>
-                        <label for="bio">Bio:</label>
-                        <textarea id="bio" name="bio" required rows="4" 
-                        maxlength="200" placeholder="Tell us about yourself..."></textarea>
-                        <br><br>
-                        <button type="submit">Submit</button>
-                    </form>
+                <form action="/submit" method="post">
+                    <div class="input-group">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control" placeholder="First Name">
+                        <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
+                    </div>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <div class="form-text">Format: 123-456-7890</div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Tell us about yourself" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Tell us about yourself</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
             </div>
             <div class="location">
                 <h2>
                     Location & Hours
                 </h2>
+                <br>
                     <p>
                         511 Tristin Isle Park Hudsonton, Michigan
                     </p>
