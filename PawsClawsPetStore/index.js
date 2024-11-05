@@ -1,5 +1,5 @@
 
-const storeName = "Paws & Claws";
+const storeName = "Pit Rescue";
 const storeType = "Pet Store";
 const storeHours = "Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 4 PM, Sunday: Closed";
 
